@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Página 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>Somar</h2>
+      </ion-col>
+    </ion-row>
+    <br>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Valor 1</ion-label>
+          <ion-input [(ngModel)]="valor1"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Valor 2</ion-label>
+          <ion-input [(ngModel)]="valor2"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="dark" expand="block" (click)="calcula()">Calcular</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Resultado</ion-label>
+          <ion-input [value]="exibeResultado()" disabled="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
